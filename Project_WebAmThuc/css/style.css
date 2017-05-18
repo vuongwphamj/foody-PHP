@@ -1,0 +1,79 @@
+/* CSS Document */
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+body {
+	background-color:white;
+}
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar-nav > li > a:hover {
+	background-color: black;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 70%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+.carousel-caption {
+  display: none; 
+}
+}
+.name_of_food{
+	font-size:18px;
+}
+footer{
+	background-color:black;
+	color:rgb(255,255,255);
+}
+.container-fluid{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.panel-body{
+	background-size: cover;
+	background-position:center center;
+}
+/*input[type=text] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 270px;
+}*/
+#input_search[type=text] {
+    width: 400px;
+	margin-left:150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#input_search[type=text]:focus {
+    width: 500px;
+	margin-left:150px;
+}
+.timkiem {
+	padding: 15px;
+	height:535px;
+
+		
+}

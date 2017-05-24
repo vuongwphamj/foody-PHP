@@ -1,5 +1,5 @@
 // JavaScript Document
-$(document).ready(function() {
+/*$(document).ready(function() {
 	$('#input_search').keydown(function(){
 		var name=$(this).val();
 		$.post('modules/ketquatimkiem.php', {name:name}, function(data){
@@ -7,5 +7,6 @@ $(document).ready(function() {
 			$('div#back_result').html(data);
 		});
 	});
-});
+});*/
+
 		

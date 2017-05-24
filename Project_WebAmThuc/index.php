@@ -11,15 +11,15 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <!-- Boostrap Template -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/css.css"/>
 </head>
+
 <?php
 include('controlers/config.php');
 if(isset($_GET['trang']))
@@ -43,21 +43,12 @@ if(isset($_GET['trang']))
       <a class="navbar-brand" href="index.php">Vương Phạm Food</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li class="<?php if($trang=="trangchu") echo "active" ?>"><a href="index.php?trang=trangchu">Trang Chủ</a></li>
-        <li class="<?php if($trang=="danhsachmonan") echo "active" ?>"><a href="index.php?trang=danhsachmonan">Món Ăn</a></li>
-        <li class="<?php if($trang=="danhsachnhahang") echo "active" ?>"><a href="index.php?trang=danhsachnhahang">Nhà Hàng</a></li>
+        <li class="<?php if($trang=="monan") echo "active" ?>"><a href="index.php?trang=monan&maloai=0">Món Ăn</a></li>
+        <li class="<?php if($trang=="nhahang") echo "active" ?>"><a href="index.php?trang=nhahang">Nhà Hàng</a></li>
         <li class="<?php if($trang=="lienhe") echo "active" ?>"><a href="index.php?trang=lienhe">Liên Hệ</a></li>
         <li class="<?php if($trang=="timkiem") echo "active" ?>"><a href="index.php?trang=timkiem">Tìm Kiếm</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      	<li>
-        	<form>
-            	<input class="form-control" type="text" name="search" style="margin-top:8px;" placeholder="Bạn muốn ăn gì?">
-            </form>
-            
-        </li>
-        <li><a href="#"><i class="fa fa-search"></i> Search</a></li>
       </ul>
     </div>
   </div>
@@ -65,7 +56,7 @@ if(isset($_GET['trang']))
   <?php
   	//include('modules/trangchu.php');
 	//include('modules/danhsachloaimonan.php');
-	//include('modules/danhsachnhahang.php');
+	//include('modules/nhahang.php');
 	//include('modules/lienhe.php');
 	//include('modules/timkiem.php');
 	include($link_trang);
@@ -84,12 +75,15 @@ if(isset($_GET['trang']))
   </div>
 </footer>
 
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="bootstrap-3.3.7-dist/js/npm.js"></script>
 <script type="text/javascript" src="js/javascript.js"></script>
+
 </body>
 </html>

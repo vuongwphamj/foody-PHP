@@ -11,8 +11,8 @@
 	while($loaimon=mysql_fetch_array($query_loaimon))
 	 {
 	?>
-    <div class="col-sm-3">
-      <a href="#<?php echo $loaimon['maloai'] ?>">
+    <div class="col-sm-4">
+      <a href="index.php?trang=monan&maloai=<?php echo $loaimon['maloai'] ?>">
       <img src="image/mon_an_tieu_bieu/<?php echo $loaimon['hinhanh'] ?>" class="img-responsive" style="width:360px; height:192px;" alt="Image">
       <p class="name_of_food"><?php echo $loaimon['tenloai'] ?></p>
       </a>
@@ -30,13 +30,6 @@
       <p class="name_of_food">Món ăn 3</p>    
     </div>-->
     
-    <div class="col-sm-3">
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-    </div>
+    
   </div>
-</div><br>
+</div>

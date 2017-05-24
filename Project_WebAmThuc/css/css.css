@@ -1,0 +1,120 @@
+/* CSS Document */
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+body {
+	background-color:white;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar-nav > li > a:hover {
+	background-color: black;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 70%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+.carousel-caption {
+  display: none; 
+}
+}
+@media (min-width: 1200px) {
+.timkiem{
+	min-height:555px;
+}
+}
+.name_of_food{
+	font-size:18px;
+}
+
+footer{
+	background-color:black;
+	color:rgb(255,255,255);
+}
+.container-fluid{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.panel-body{
+	background-size: cover;
+	background-position:center center;
+}
+/*input[type=text] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 270px;
+}*/
+#input_search[type=text] {
+    width: 400px;
+	margin-left:150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#input_search[type=text]:focus {
+    width: 500px;
+	margin-left:150px;
+}
+.timkiem {
+	padding: 15px;
+}
+#input_search{
+	display:block;
+	z-index:2; 
+	position:relative;
+}
+#back_result{
+	display:none;
+	float:bottom; 
+	width:500px;
+	min-height: 20px;
+	max-height:200px;
+	padding:5px; 
+	border: 2px solid rgb(209,209,209); 
+	background-color: white;
+	border-radius:5px;
+	margin-left:150px;
+	overflow: auto;
+}
+div.monan_search:hover{
+	background-color: rgb(214,214,214);
+}
+div.ketquachitiet{
+	background-color:white;
+	display:flex;
+	border-radius: 10px;
+	border: 2px solid rgb(225,225,225); 
+}
+div.ketquachitiet:hover{
+	background-color: rgb(225,225,225);
+}
+a{
+	text-decoration:none;
+}
+.img_nhahang_monan{
+	width: 270px;
+	height:145px;	
+}
